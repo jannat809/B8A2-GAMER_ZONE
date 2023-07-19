@@ -152,9 +152,14 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -em-background-clip: text;
+    -em-text-fill-color: transparent;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .gamer-description{
     color: #534C64;
     text-align: right;
@@ -244,9 +249,12 @@ body{
   
    
   }
-  .games-img:hover{
+  .games-img:hover {
     border: 3px solid palevioletred;
     filter: brightness(40%);
+    cursor: pointer;
+    
+    
   }
 
 
