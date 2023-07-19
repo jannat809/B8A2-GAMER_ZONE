@@ -343,7 +343,7 @@ padding-top: 150px;
    font-weight: 400;
    margin-bottom: 20px;
 }
-.carrer-list{
+.career-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -351,8 +351,8 @@ padding-top: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.list-item ul li{
-  list-style: none;
+.list-item  li{
+  list-style-type: none;
   padding-right: 30px;
 }
 .career-btn{
