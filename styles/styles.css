@@ -128,6 +128,17 @@ body{
     padding-right: 100px;
    
 }
+/* .left-div{
+    width: 50%;
+    position: relative;
+}
+.right-div{
+    width: 50%;
+    position: relative;
+}
+.gamer-img{
+    width: 100%;
+} */
 .gamer-title{
     text-align: right;
     font-size: 48px;
@@ -158,6 +169,8 @@ body{
    margin-top: 15px;
    margin-bottom: 15px;
    text-align: right;
+  margin-left: 330px;
+
 }
 .gamer-purpose{
     color: #534C64;

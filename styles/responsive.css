@@ -1,9 +1,10 @@
 /* mobile device */
 @media screen and (max-width:576px){
-    .navbar-section, .nav-content, .about-us, .banner-section{
+    .navbar-section, .nav-content, .about-us, .banner-section,.gamer{
         width: 100%;
         flex-direction: column;
     }
+    /* banner section */
     .banner-section{
         margin-left: 0;
         margin-right: 0;
@@ -29,6 +30,20 @@
     .div-2 img{
         width: 100%;
     }
+    /* gamer section */
+    .gamer{
+        text-align: center;
+    }
+   .gamer-img{
+    width: 100%;
+    position: relative;
+    padding: 0 40px;
+   }
+   .gamer-btn{
+     margin-left: 100px;
+     text-align: center;
+   }
+   
 }
 /* tablet device */
 @media screen and (min-width:577px) and (max-width:768px) {
