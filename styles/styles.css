@@ -25,6 +25,11 @@ body{
     align-items: center;
     gap: 20px;
 }
+.logo{
+    font-size: 45px;
+    font-weight: 700;
+    
+}
 .g-color{
    color: #FF42A5;
 }
@@ -209,42 +214,44 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-evenly;
+    
 }
 .games-img{
     border-radius: 5px;
     background: #FFF;
-    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
     padding: 20px auto 20px 20px;
     margin-top: 30px;
     margin-bottom: 30px;
     border: none;
-      position:relative;
-}
-.games-img:hover{
-  background: rgb(220, 201, 201);
-} 
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom:0 ;
-    opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  background: black;
-  cursor: pointer;
-}
-.content{
     position:relative;
+    
+}
+.play-btn{
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%);
-    color: white;
-    text-align: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer; 
 }
-.container:hover .overlay{
-    opacity: 0.8;
-}
+ .play-btn i {
+    font-size: 32px;
+  }
+  .games-img:hover .play-btn {
+    opacity: 1;
+  
+   
+  }
+  .games-img:hover{
+    border: 3px solid palevioletred;
+    filter: brightness(40%);
+  }
+
+
+
+
 /* NO DOWNLOAD section */
 .download{
     display: flex;
@@ -298,6 +305,7 @@ body{
     color: #534C64;
     font-size: 18px;
     font-weight: 400;
+    padding-top: 20px;
 }
 .second-down-img{
     margin-left: 510px;
@@ -376,11 +384,44 @@ padding-top: 150px;
 .icons{
     width: 60px;
 }
+.pre-footer-img:hover{
+    border: 1px solid thistle;
+}
 /* footer */
 .footer{
     background: #0B0223;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
 }
-.logo-container{
+.anchor-list{
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    justify-content: center;
+    gap: 50px;
+
+}
+.anchor-list a{
+    text-decoration: none;
+    color: white;
+}
+.footer-icon{
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    justify-content: center;
+    gap: 20px;
+}
+.last-item{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: center;
+}
+/* .logo-container{
     padding-top: 100px;
     padding-bottom: 20px;
 }
@@ -421,4 +462,4 @@ padding-top: 150px;
     text-align: center;
     padding-bottom: 50px;
     font-size: 12px;
-}
+} */

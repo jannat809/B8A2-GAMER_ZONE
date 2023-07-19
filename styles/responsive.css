@@ -1,7 +1,7 @@
 /* mobile device */
 @media screen and (max-width:576px){
-    .navbar-section, .nav-content, .about-us, .banner-section,.gamer{
-        width: 100%;
+    .navbar-section, .nav-content, .about-us, .banner-section,.gamer,.download, .career
+   {    width: 100%;
         flex-direction: column;
     }
     /* banner section */
@@ -31,8 +31,19 @@
         width: 100%;
     }
     /* gamer section */
+    .online-games-title{
+        font-size: 30px;
+    }
     .gamer{
         text-align: center;
+    }
+    .online-description{
+        font-size: 16px;
+    }
+    .img-caption{
+        font-size:14px ;
+        padding-left: 20px;
+        padding-right: 20px;
     }
    .gamer-img{
     width: 100%;
@@ -43,7 +54,61 @@
      margin-left: 100px;
      text-align: center;
    }
+   .online-img-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+   /* no download section */
    
+   .download-title{
+    font-size: 40px;
+   }
+   .download-description{
+      padding-bottom: 30px;
+   }
+  .rectangle-55,.rectangle-66 {
+    width: 100%;
+  }
+  .rectangle-66 {
+    margin-top: -150px;
+    height: 320px;
+  }
+  /* another download section */
+  .second-download{
+    flex-direction: column;
+   }
+ .rectangle-67{
+    width: 600px;
+    padding-left: 20px;
+ }
+ /* career section */
+ .career-img{
+    width:100%;
+ }
+ /* pre footer section */
+ .pre-footer{
+    grid-template-columns: repeat(2, 1fr);
+ }
+ /* footer section */
+ .footer{
+    padding: 30px;
+    width: 100%;
+ }
+ .anchor-list{
+    grid-template-columns: repeat(3, 100px);
+}
+/* .footer-icon{
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    justify-content: center;
+    gap: 20px;
+} */
+.last-item{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    row-gap: 20px;
+}
 }
 /* tablet device */
 @media screen and (min-width:577px) and (max-width:768px) {
