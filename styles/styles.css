@@ -159,7 +159,7 @@ body{
 }
 .gamer-btn{
    color: #FFF;
-   font-size: 18px;
+   font-size: 16px;
    font-weight: 600;
    text-transform: uppercase;
    border-radius: 48px;
@@ -183,4 +183,96 @@ body{
 }
 .purpose{
  font-size: 16px;
+}
+/* online game section */
+.online-games{
+    margin-top:100px;
+    background: #FFF;
+    text-align: center;
+}
+.online-games-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.online-text{
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.online-description{
+    color: #534C64;
+    margin-top: 10px;
+}
+.online-img-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-evenly;
+}
+.games-img{
+    border-radius: 5px;
+    background: #FFF;
+    /* box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15); */
+    padding: 20px auto 20px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+      position:relative;
+}
+.games-img:hover{
+  background: rgb(220, 201, 201);
+} 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0 ;
+    opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  background: black;
+  cursor: pointer;
+}
+.content{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    color: white;
+    text-align: center;
+}
+.container:hover .overlay{
+    opacity: 0.8;
+}
+/* NO DOWNLOAD section */
+.download{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 90px;
+}
+.download-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+   background-clip: text;
+   color: #0B0223;
+   font-size: 48px;
+   font-weight: 700;
+}
+.play{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.download-description{
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top:10px ;
+}
+.down-img{
+    margin-top: -270px;
+    margin-left: -150px;
 }
